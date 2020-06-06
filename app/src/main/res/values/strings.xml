@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PayTab</string>
+    <string name="enter_amount_max">Enter amount min 1 and max 9999</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="enter_title">Enter title</string>
+    <string name="enter_phone_number">Enter Phone number</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_street_name">Enter street name</string>
+    <string name="enter_city">Enter city</string>
+    <string name="enter_state">Enter state</string>
+    <string name="enter_country">Enter country</string>
+    <string name="enter_postal_code">Enter postal code</string>
+    <string name="submit">Submit</string>
+    <string name="error_msg">Something went wrong please try later</string>
+    <string name="transaction_id">Transaction Id:</string>
+    <string name="email_id">Email Id:</string>
+    <string name="amount">Amount:</string>
+    <string name="title">Title:</string>
+    <string name="result_message">Result message:</string>
+</resources>

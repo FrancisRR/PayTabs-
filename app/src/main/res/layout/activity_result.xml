@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="25dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="25dp" />
+
+    <TextView
+        android:id="@+id/transactionIdHint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="@dimen/text_value"
+        android:text="@string/transaction_id"
+        app:layout_constraintEnd_toStartOf="@+id/transactionIdValue"
+        app:layout_constraintHorizontal_weight="5"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/transactionIdValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="@dimen/text_value"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintHorizontal_weight="6"
+        app:layout_constraintStart_toEndOf="@+id/transactionIdHint"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/emailIdHint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_margin_15"
+        android:text="@string/email_id"
+        android:textSize="@dimen/text_value"
+        app:layout_constraintEnd_toStartOf="@+id/emailIdValue"
+        app:layout_constraintHorizontal_weight="5"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/transactionIdValue" />
+
+    <TextView
+        android:id="@+id/emailIdValue"
+        android:layout_width="0dp"
+        android:textSize="@dimen/text_value"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_margin_15"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintHorizontal_weight="6"
+        app:layout_constraintStart_toEndOf="@+id/emailIdHint"
+        app:layout_constraintTop_toBottomOf="@+id/transactionIdValue"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/amountHint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_value"
+        android:layout_marginTop="@dimen/top_margin_15"
+        android:text="@string/amount"
+        app:layout_constraintEnd_toStartOf="@+id/resultMessageValue"
+        app:layout_constraintHorizontal_weight="5"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/emailIdValue" />
+
+    <TextView
+        android:id="@+id/amountValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_value"
+        android:layout_marginTop="@dimen/top_margin_15"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintHorizontal_weight="6"
+        app:layout_constraintStart_toEndOf="@+id/amountHint"
+        app:layout_constraintTop_toBottomOf="@+id/emailIdValue"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/titleHint"
+        android:layout_width="0dp"
+        android:textSize="@dimen/text_value"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_margin_15"
+        android:text="@string/title"
+        app:layout_constraintEnd_toStartOf="@+id/titleValue"
+        app:layout_constraintHorizontal_weight="5"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/amountValue" />
+
+    <TextView
+        android:id="@+id/titleValue"
+        android:layout_width="0dp"
+        android:textSize="@dimen/text_value"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_margin_15"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintHorizontal_weight="6"
+        app:layout_constraintStart_toEndOf="@+id/titleHint"
+        app:layout_constraintTop_toBottomOf="@+id/amountValue"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/resultMessageHint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_value"
+        android:layout_marginTop="@dimen/top_margin_15"
+        android:text="@string/result_message"
+        app:layout_constraintEnd_toStartOf="@+id/titleValue"
+        app:layout_constraintHorizontal_weight="5"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/titleValue" />
+
+    <TextView
+        android:id="@+id/resultMessageValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_value"
+        android:layout_marginTop="@dimen/top_margin_15"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEnd"
+        app:layout_constraintHorizontal_weight="6"
+        app:layout_constraintStart_toEndOf="@+id/resultMessageHint"
+        app:layout_constraintTop_toBottomOf="@+id/titleValue"
+        tools:text="" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
